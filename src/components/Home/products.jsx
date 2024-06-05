@@ -6,17 +6,17 @@ import SingleProductsCardDashboard from "../dashboard/SingleProductsCardDashboar
 const Products = ({data}) => {
   
     return (
-        <div>
-            <h1>Our products</h1>
-            <div className="flex gap-2">
-          {
-            data.map(clothe =>
-                <SingleProductsCardDashboard clothe={clothe} key={clothe.id}></SingleProductsCardDashboard>
-            )
-          }
+      <div className="flex flex-col items-center">
+  <h1 className="text-5xl font-bold mb-6 text-center">Our products</h1>
+  <div className="flex gap-6 flex-wrap justify-center">
+    {
+      data.map(clothe =>
+        <SingleProductsCardDashboard clothe={clothe} key={clothe.id}></SingleProductsCardDashboard>
+      )
+    }
+  </div>
+</div>
 
-            </div>
-        </div>
     );
 };
 
