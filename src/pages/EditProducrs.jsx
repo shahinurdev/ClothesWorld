@@ -72,17 +72,6 @@ const EditProducrs = () => {
                 onChange={(e)=>setPrice(e.target.value)}
               />
             </div>
-            {/* <div className="mt-2">
-              <input
-                className="bg-gray-100 p-4 w-full border border-black rounded-lg"
-                type="text"
-                name="id"
-                placeholder="id"
-                value={id}
-                onChange={(e)=>setId(e.target.value)
-                }
-              />
-            </div> */}
             <div className="mt-2">
               <input
                 className="bg-gray-100 p-4 w-full border border-black rounded-lg"
@@ -98,7 +87,7 @@ const EditProducrs = () => {
               <input
                 className="btn mt-4 w-full bg-red-500 text-white p-4"
                 type="submit"
-                value="Add product"
+                value="Update product"
               />
             </div>
           </form>

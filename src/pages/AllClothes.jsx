@@ -23,11 +23,11 @@ const AllClothes = () => {
     };
 
     return (
-        <div>
+        <div className="flex flex-col items-center">
             <h1 className="text-5xl font-bold text-center">
                 All Clothes
             </h1>
-            <div className="my-16 ">
+            <div className="flex gap-6 flex-wrap justify-center ">
                 {clothes.map((clothe) => (
                     <SingleProductsCardDashboard
                         clothe={clothe}

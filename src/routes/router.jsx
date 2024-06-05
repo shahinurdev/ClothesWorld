@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
 import Home from "../pages/Home";
-import Abouts from "../pages/Abouts";
 import ErrorPages from "../pages/ErrorPages";
 import Login from "../pages/Login";
 import Registration from "../pages/Registration";
@@ -13,6 +12,7 @@ import AllClothes from "../pages/AllClothes";
 import AddClothe from "../pages/AddClothe";
 import EditProducrs from "../pages/EditProducrs";
 import EditUserProfile from "../pages/EditUserProfile";
+import Banner from "../components/Home/Banner";
 
 export const router = createBrowserRouter([
     {
@@ -32,7 +32,7 @@ export const router = createBrowserRouter([
       },
         {
             path: "/about",
-            element:<Abouts></Abouts>
+            element:<Banner></Banner>
         },
         {
             path: "/login",

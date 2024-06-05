@@ -16,15 +16,15 @@ const Navbar = () => {
           {!user&&(
                           <>
                           <li>
-                          <Link to={"/login"}>login</Link>
+                          <Link to={"/login"}>Login</Link>
                           </li>
-                          <li><Link to={"/registration"}>registration</Link></li>
+                          <li><Link to={"/registration"}>Registration</Link></li>
                           </>
            )}
       
       {user && (
               <> 
-              <li><Link to={"/dashboard"}>dashboard</Link></li>
+              <li><Link to={"/dashboard"}>Dashboard</Link></li>
               
               </>
             )}
@@ -36,7 +36,7 @@ const Navbar = () => {
             
               </>
             )}
-            <li><a>About</a></li>
+            <li ><Link to={"/about"}>About</Link></li>
             <li><a>Contact</a></li>
           </ul>
         </div>
@@ -47,15 +47,15 @@ const Navbar = () => {
         {!user&&(
                           <>
                           <li>
-                          <Link to={"/login"}>login</Link>
+                          <Link to={"/login"}>Login</Link>
                           </li>
-                          <li><Link to={"/registration"}>registration</Link></li>
+                          <li><Link to={"/registration"}>Registration</Link></li>
                           </>
            )}
 
 {user && (
               <> 
-              <li><Link to={"/dashboard"}>dashboard</Link></li>
+              <li><Link to={"/dashboard"}>Dashboard</Link></li>
               
               </>
             )}
@@ -67,7 +67,7 @@ const Navbar = () => {
             
               </>
             )}
-          <li><a>About</a></li>
+            <li ><Link to={"/about"}>About</Link></li>
             <li><a>Contact</a></li>
         </ul>
       </div>
