@@ -24,19 +24,22 @@ const Dashboard = () => {
   console.log(userInfo);
 
   return (
-    <div>
-        <div className="flex justify-between mb-7">
-        <h1 className="text-3xl">Profile information</h1>
-        <Link to={`profile/edit/${userInfo?._id}`}className="text-3xl">
-            Edit profile
+    <div className="max-w-lg mx-auto p-6 bg-white shadow-lg rounded-lg">
+    <div className="flex justify-between items-center mb-7">
+        <h1 className="text-3xl font-semibold text-gray-800">Profile Information</h1>
+        <Link to={`profile/edit/${userInfo?._id}`} className="text-lg font-medium text-blue-500 hover:underline">
+            Edit Profile
         </Link>
-        </div>
-     <div>
-     <h2>{userInfo?.name}</h2>
-      <h3>{userInfo?.email}</h3>
-     </div>
-
     </div>
+    <div className="space-y-4">
+        <div className="text-center">
+            <h2 className="text-2xl font-medium text-gray-700">Name:{userInfo?.name}</h2>
+            <h3 className="text-xl text-gray-500">Email: {userInfo?.email}</h3>
+            <h3 className="text-xl text-gray-500">Age: {userInfo?.age}</h3>
+            <h3 className="text-xl text-gray-500">Phone: {userInfo?.mobileNumber}</h3>
+        </div>
+    </div>
+</div>
   );
 };
 
